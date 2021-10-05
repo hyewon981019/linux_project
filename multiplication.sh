@@ -9,7 +9,7 @@ for i in "$@"
 do 
 	case "${i#[-+]}" in
 		*[!0-9]* | ''| 0)
-			echo not nagative integer
+			echo "not negative integer"
 			exit 1;;
 	esac
 done
