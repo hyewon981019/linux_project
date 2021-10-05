@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [ $# -ne 2 ]
+then
+	exit 1
+fi
+
 for i in "$@"
 do 
 	case "${i#[-+]}" in
